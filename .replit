@@ -1,0 +1,11 @@
+modules = ["nodejs-22", "zig-0.11", "typescript-language-server", "bun-1.1"]
+run = "cd kcb-platform && bun --bun run dev"
+[nix]
+channel = "stable-24_05"
+
+[deployment]
+run = ["sh", "-c", "cd kcb-platform && bun --bun run dev"]
+
+[[ports]]
+localPort = 3000
+externalPort = 80

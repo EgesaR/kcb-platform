@@ -1,23 +1,29 @@
 {
   "name": "kcb-platform",
-  "version": "1.0.0",
-  "description": "Is a Kirra College Platform for school purpose viewing and student, teacher parent triangular collaboration to maximize student potential.",
-  "main": "index.js",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.6.0",
-    "@fortawesome/free-brands-svg-icons": "^6.6.0",
-    "@fortawesome/free-regular-svg-icons": "^6.6.0",
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
-    "@tailwindcss/typography": "^0.5.15",
-    "prettier-plugin-tailwindcss": "^0.6.8",
-    "tailwind-variants": "^0.2.1",
-    "tailwindcss": "^3.4.13"
+    "next": "14.2.13",
+    "preline": "^2.5.0",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.13",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
   }
 }

@@ -8,14 +8,9 @@ const HeroContent = ({children}) => {
         <motion.div
             initial="hidden"
             animate="visible"
-            className="flex flex-row items-center justify-center px-20 mt-40 w-full z-[20]">
-            <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
-                <motion.div
-                    className="Welcome-box py-[8px] px-[4px] border border-[#7042f88b] opacity-[0.9]"
-                    variants={slideInFromTop}
-                >
-                    {children}
-                </motion.div>
+            className="flex flex-row items-center justify-center px-20 mt-40 w-full h-full z-[20]">
+            <div className="h-full w-full flex flex-row gap-5 justify-center m-auto text-start">
+                {children}
             </div>
         </motion.div>
     )

@@ -9,6 +9,7 @@ import SplashScreen from "@/components/splashscreen"
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react"
 import SideBar from "@/components/Portifolio/sidebar";
+import Script from 'next/script'
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -42,6 +43,10 @@ export default function RootLayout({
   
   return (
     <html lang="en">
+      <head>
+        <title>KCB Platform</title>
+        
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased sm:px-16 px-4`}
       >

@@ -68,13 +68,7 @@ export default function Home() {
             </p>
           </div>
           <div className="flex h-full w-[55%] items-center justify-center">
-            <Image
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0TG6I-bbD3yxPd5W6GEU1u36Q6SRAjDSvFQ&s"
-              alt="Image 1"
-              width={500}
-              height={500}
-              className="h-[65%] w-[65%] rounded-2xl animate-fade-left animate-once animate-duration-700 animate-delay-1000"
-            />
+            
           </div>
         </Hero>
         <motion.ul

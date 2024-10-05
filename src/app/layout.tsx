@@ -53,7 +53,6 @@ export default function RootLayout({
           <>
             <PrelineScript />
             <NavBar
-              isSidebarOpen={isSidebarOpen}
               setSidebarOpen={setSidebarOpen}
             />
             <SideBar isOpen={isSidebarOpen} onClose={() => setSidebarOpen} />

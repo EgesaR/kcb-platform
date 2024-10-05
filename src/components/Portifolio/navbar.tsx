@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 
-const NavBar = ({ isSidebarOpen, setSidebarOpen}) => {
+const NavBar = ({ setSidebarOpen}) => {
   return (
     <div className="w-full h-20 px-2 sm:px-2 flex items-center text-black fixed top-0 left-0 bg-white dark:bg-[#000] z-[220] dark:text-white">
       <h2 className="text-xl font-bold sm:text-3xl animate-fade-down animate-once animate-duration-[1000ms] animate-delay-[250ms]">
@@ -64,12 +64,4 @@ const NavBar = ({ isSidebarOpen, setSidebarOpen}) => {
   );
 };
 
-const MobileSlideBarMenu = () => {
-  return (
-    <div className="fixed top-0 left-0 w-full h-full blur-sm">
-      Hello 
-
-    </div>
-  );
-}
 export default NavBar;

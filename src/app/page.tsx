@@ -1,9 +1,10 @@
 "use client"
 
-import Image from "next/image";
 import Hero from "../components/Portifolio/Hero";
 import { motion } from "framer-motion"
-import { slideInFromTop } from "@/utils/motion"
+import AOS from "aos"
+import "aos/dist/aos.css"
+import { useEffect } from "react"
 
 const draw = {
   hidden: { pathLength: 0, opacity: 0 },
@@ -21,6 +22,11 @@ const draw = {
 };
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init({
+
+    })
+  },[])
   return (
     <div className="font-[family-name:var(--font-geist-sans)] w-full h-screen">
       <div className="flex flex-col gap-5">
@@ -190,7 +196,12 @@ export default function Home() {
         variants={draw}
         custom={5}
       />
-    </motion.svg>
+        </motion.svg>
+        <div className="h-[25rem] bg-red-500 w-full">
+          <div data-aos="fade-up">
+          Content to animate
+        </div>
+        </div>
       </div>
     </div>
   );

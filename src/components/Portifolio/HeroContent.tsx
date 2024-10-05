@@ -1,7 +1,6 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { slideInFromTop } from "@/utils/motion"
 
 const HeroContent = ({children}) => {
     return(

@@ -1,6 +1,5 @@
 "use client"   
 
-import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import PrelineScript from "../components/PrelineScript";
@@ -9,7 +8,6 @@ import SplashScreen from "@/components/splashscreen"
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react"
 import SideBar from "@/components/Portifolio/sidebar";
-import Script from 'next/script'
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -42,10 +40,9 @@ export default function RootLayout({
   }, [isLoading])
   
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <head>
         <title>KCB Platform</title>
-        
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased sm:px-16 px-4`}
@@ -59,7 +56,7 @@ export default function RootLayout({
               isSidebarOpen={isSidebarOpen}
               setSidebarOpen={setSidebarOpen}
             />
-            <SideBar isSidebarOpen={isSidebarOpen} setSidebarOpen={setSidebarOpen} />
+            <SideBar isOpen={isSidebarOpen} onClose={() => setSidebarOpen} />
             {children}
           </>
         )}

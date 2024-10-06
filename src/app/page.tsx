@@ -71,15 +71,6 @@ export default function Home() {
             
           </div>
         </Hero>
-        <motion.ul
-          initial={{ "--rotate": "0deg" } as any}
-          animate={{ "--rotate": "360deg" } as any}
-          transition={{ duration: 2, repeat: Infinity }}
-        >
-          <li style={{ transform: "rotate(var(--rotate))" }} />
-          <li style={{ transform: "rotate(var(--rotate))" }} />
-          <li style={{ transform: "rotate(var(--rotate))" }} />
-        </motion.ul>
         Hello World
         <motion.svg
           width="600"

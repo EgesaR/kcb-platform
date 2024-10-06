@@ -36,7 +36,7 @@ export default function Home() {
             <div data-aos="fade-down">
               <p className="text-md animate-fade-down animate-once animate-duration-700 animate-delay-1000">
                 A platform laid to allow the public and the within to check out
-                on the school's status, life and events.
+                on the school&apos;s status, life and events.
               </p>
             </div>
             <div data-aos="fade-down">
@@ -84,8 +84,8 @@ export default function Home() {
               </div>
               <div data-aos="fade-left">
                 <p>
-                  Kiira College Butiki is a single boys' school that excels in
-                  shaping young boys into men of valor. The school not only
+                  Kiira College Butiki is a single boys&apos; school that excels
+                  in shaping young boys into men of valor. The school not only
                   focuses on academic excellence but also aims to bring out
                   their social networking skills and talents.
                   <br />
@@ -96,8 +96,7 @@ export default function Home() {
                   debate, rugby and many more—ensuring every student can find
                   their passion. Our dedicated faculty, many with advanced
                   degrees, provide personalized support, fostering a safe and
-                  collaborative environment. 
-                  Plus, with innovative classrooms
+                  collaborative environment. Plus, with innovative classrooms
                   equipped with the latest technology and a robust college
                   counseling program, we prepare students not just for
                   graduation, but for success in their future endeavors.

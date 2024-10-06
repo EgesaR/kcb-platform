@@ -1,5 +1,5 @@
 "use client"
-import Image from "next/image";
+//import Image from "next/image";
 import { useEffect } from "react";
 
 import Hero from "../components/Portifolio/Hero";

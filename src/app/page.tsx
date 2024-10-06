@@ -96,7 +96,8 @@ export default function Home() {
                   debate, rugby and many more—ensuring every student can find
                   their passion. Our dedicated faculty, many with advanced
                   degrees, provide personalized support, fostering a safe and
-                  collaborative environment. Plus, with innovative classrooms
+                  collaborative environment. 
+                  Plus, with innovative classrooms
                   equipped with the latest technology and a robust college
                   counseling program, we prepare students not just for
                   graduation, but for success in their future endeavors.

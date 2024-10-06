@@ -6,7 +6,7 @@ const NavBar = ({ setSidebarOpen}) => {
   return (
     <div className="w-full h-20 px-2 sm:px-2 flex items-center text-black fixed top-0 left-0 bg-white dark:bg-[#000] z-[220] dark:text-white">
       <h2 className="text-xl font-bold sm:text-3xl animate-fade-down animate-once animate-duration-[1000ms] animate-delay-[250ms]">
-        Kirra College Butiki
+        Kiira College Butiki
       </h2>
       <div className="hidden sm:flex gap-8 mx-auto font-semibold">
         <Link

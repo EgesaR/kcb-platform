@@ -1,7 +1,6 @@
 "use client";
 //import Image from "next/image";
 import { useEffect } from "react";
-import autotyper from 'autotyper';
 
 import Hero from "../components/Portifolio/Hero";
 import AOS from "aos";

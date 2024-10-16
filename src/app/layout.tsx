@@ -10,7 +10,6 @@ import { useState, useEffect } from "react"
 import SideBar from "@/components/Portifolio/sidebar";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
-import Script from 'next/script'
 
 
 config.autoAddCss = false;

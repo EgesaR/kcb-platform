@@ -70,7 +70,7 @@ export default function RootLayout({
             {children}
           </>
         )}
-        <Script src='https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/js/pagedone.js'></Script>
+        <script src='https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/js/pagedone.js' async></script>
       </body>
     </html>
   );

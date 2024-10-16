@@ -116,26 +116,15 @@ const ContactUsPage = () => {
               title='First Name'
               placeholder='First Name'
               type='text'
-              inputSyle=''
             />
-            <FormInput
-              title='Last Name'
-              placeholder='Last Name'
-              type='text'
-              inputSyle=""/>
+            <FormInput title='Last Name' placeholder='Last Name' type='text' />
           </div>
           <div className='flex gap-10 mb-9'>
-            <FormInput
-              title='Mail'
-              placeholder='Mail'
-              type='email'
-              inputSyle=''
-            />
+            <FormInput title='Mail' placeholder='Mail' type='email' />
             <FormInput
               title='Phone Number'
               placeholder='Phone Number'
               type='tel'
-              inputSyle=''
             />
           </div>
           <FormInput
@@ -165,7 +154,11 @@ const FormConfirmationPopUp = ({
   showUp,
   setShowUp,
 }) => {
-  console.log("Message Object", messageObj);
+  const checkHandler = () => {
+    setTimeout(() => {
+      setShowUp(true);
+    }, 5000);
+  };
   return (
     <div className='w-full relative'>
       <button
@@ -193,12 +186,13 @@ const FormConfirmationPopUp = ({
                 </label>
               ) : messageObj.success ? (
                 <>
-                  <label className='hidden'>
-                    {setTimeout(() => {
-                      setShowUp(true);
-                    }, 5000)}
-                  </label>
-                  <input type='checkbox' id='check' checked={showUp} />
+                  <label className='hidden'></label>
+                  <input
+                    type='checkbox'
+                    id='check'
+                    checked={showUp}
+                    onChange={checkHandler}
+                  />
                   <label
                     htmlFor='check'
                     className='inline-block relative w-[126px] h-[126px] border-2 rounded-full border-l-[#5cb85c] iconLabel'>
@@ -234,8 +228,7 @@ const FormConfirmationPopUp = ({
                 className='py-2.5 px-5 text-xs  bg-indigo-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700 close-modal-button'
                 data-pd-overlay='#static-backdrop-modal'
                 data-modal-target='static-backdrop-modal'>
-                <Link href={messageObj.success ? '/' : "#"}>Okay, got it
-                </Link>
+                <Link href={messageObj.success ? "/" : "#"}>Okay, got it</Link>
               </button>
             </div>
           </div>

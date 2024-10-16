@@ -46,7 +46,7 @@ const Sidebar= ({ isOpen, onClose }) => {
         </ul>
         <div className="absolute bottom-10 left-0 w-full h-6 flex items-center justify-between bg-red-600">
           <button className="bg-green-900 px-4 py-1.5 rounded-full text-white hover:bg-green-700">
-            <Link onClick={() => onClose(false)} href="/contact">contact us</Link>
+            <Link onClick={() => onClose(false)} href="/contactus">contactus us</Link>
           </button>
           <button
             className="bg-green-900 rounded-full text-white hover:bg-green-700 px-4 py-1.5"

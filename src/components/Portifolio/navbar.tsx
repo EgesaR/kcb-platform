@@ -4,42 +4,45 @@ import Link from "next/link";
 
 const NavBar = ({ setSidebarOpen}) => {
   return (
-    <div className="w-full h-20 relative px-2 sm:px-2 flex items-center text-black fixed top-0 left-0 bg-white dark:bg-[#000] z-[220] dark:text-white">
-      <h2 className="text-xl font-bold sm:text-xl animate-fade-down animate-once animate-duration-[1000ms] animate-delay-[250ms]">
+    <div className="w-full h-20 fixed px-2 sm:px-2 flex items-center text-black top-0 left-0 bg-white dark:bg-black z-[220] dark:text-white">
+      <h2 className="hidden sm:hidden lg:flex text-xl font-bold sm:text-xl animate-fade-down animate-once animate-duration-[1000ms] animate-delay-[250ms]">
         Kiira College Butiki
       </h2>
-      <div className="hidden sm:flex items-center gap-8 sm:pl-10 mx-auto font-semibold">
+      <h2 className="flex lg:hidden text-xl font-bold sm:text-xl animate-fade-down animate-once animate-duration-[1000ms] animate-delay-[250ms]">
+        KCB
+      </h2>
+      <div className="hidden md:flex lg:flex items-center gap-8 sm:pl-10 mx-auto font-semibold">
         <Link
           href="/"
-          className="text-lg flex justify-center animate-fade-down animate-once animate-duration-[1000ms] animate-delay-[350ms]"
+          className="text-lg dark:text-white flex justify-center animate-fade-down animate-once animate-duration-[1000ms] animate-delay-[350ms]"
         >
           Home
         </Link>
         <Link
           href="/about"
-          className="text-lg flex justify-center animate-fade-down animate-once animate-duration-[1000ms] animate-delay-[450ms]"
+          className="text-lg dark:text-white flex justify-center animate-fade-down animate-once animate-duration-[1000ms] animate-delay-[450ms]"
         >
           About
         </Link>
         <Link
           href="/around_the_college"
-          className="text-lg flex justify-center animate-fade-down animate-once animate-duration-[1000ms] animate-delay-[550ms]"
+          className="text-lg dark:text-white flex justify-center animate-fade-down animate-once animate-duration-[1000ms] animate-delay-[550ms]"
         >
           Around the college
         </Link>
         <Link
           href="/admissions"
-          className="text-lg flex justify-center animate-fade-down animate-once animate-duration-[1000ms] animate-delay-[650ms]"
+          className="text-lg dark:text-white flex justify-center animate-fade-down animate-once animate-duration-[1000ms] animate-delay-[650ms]"
         >
           Admission
         </Link>
       </div>
-      <div className="hidden sm:flex gap-6 pl-2 font-semibold">
+      <div className="hidden md:flex sm:flex gap-6 pl-2 font-semibold">
         <button className="animate-fade-down animate-once animate-duration-[1000ms] animate-delay-[750ms]">
           <Link
-          href="/contact"
+          href="/contactus"
         >
-          Contacts
+          Contact Us
         </Link>
         </button>
         <button
@@ -56,7 +59,7 @@ const NavBar = ({ setSidebarOpen}) => {
       <button
         id="hs-dropdown-custom-trigger"
         type="button"
-        className="hs-dropdown-toggle w-12 h-12 flex sm:hidden items-center justify-center absolute right-0 font-medium rounded-lg bg-transparent 
+        className="hs-dropdown-toggle w-12 h-12 flex md:hidden sm:hidden items-center justify-center absolute right-0 font-medium rounded-lg bg-transparent 
         text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none 
         dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800 animate-fade-down animate-once
          animate-duration-[1000ms] animate-delay-[950ms]"

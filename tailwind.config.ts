@@ -6,6 +6,7 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "node_modules/preline/dist/*.js",
+    //"node_modules/pagedone/src/*.js",
   ],
   theme: {
     extend: {
@@ -15,6 +16,10 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("preline/plugin"), require("tailwindcss-animated")],
+  plugins: [
+    require("preline/plugin"),
+    require("tailwindcss-animated"),
+    //require("@tailwindcss/forms"),
+  ],
 };
 export default config;

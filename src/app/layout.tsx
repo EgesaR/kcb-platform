@@ -8,6 +8,9 @@ import SplashScreen from "@/components/splashscreen"
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react"
 import SideBar from "@/components/Portifolio/sidebar";
+import { config } from "@fortawesome/fontawesome-svg-core";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+config.autoAddCss = false;
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -40,21 +43,27 @@ export default function RootLayout({
   }, [isLoading])
   
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang='en' className='scroll-smooth'>
       <head>
         <title>KCB Platform</title>
+        <link
+          href='https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/css/pagedone.css '
+          rel='stylesheet'
+        />
+        <script src='https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/js/pagedone.js'></script>
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased sm:px-16 ${isSidebarOpen ? "overflow-hidden" : ""}`}
-      >
+        className={`${geistSans.variable} ${
+          geistMono.variable
+        } antialiased overflow-x-hidden ${
+          isSidebarOpen ? "overflow-hidden" : ""
+        }`}>
         {isLoading ? (
           <SplashScreen finishLoading={() => setIsLoading(false)} />
         ) : (
           <>
             <PrelineScript />
-            <NavBar
-              setSidebarOpen={setSidebarOpen}
-            />
+            <NavBar setSidebarOpen={setSidebarOpen} />
             <SideBar isOpen={isSidebarOpen} onClose={setSidebarOpen} />
             {children}
           </>

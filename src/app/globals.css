@@ -121,3 +121,7 @@ line {
   fill: transparent;
 }
 
+
+body.overflow-hidden .page{
+  overflow: hidden;
+}

@@ -1,11 +1,12 @@
 "use client";
 //import Image from "next/image";
 import { useEffect } from "react";
-
+import "./globals.css";
 import Hero from "../components/Portifolio/Hero";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Image from "next/image";
+import Footer from "@/components/Portifolio/Footer";
 
 
 
@@ -14,7 +15,7 @@ export default function Home() {
     AOS.init({});
   }, []);
   return (
-    <div className="font-[family-name:var(--font-geist-sans)] w-full h-screen">
+    <div className="font-[family-name:var(--font-geist-sans)] w-full h-screen page">
       <div className="flex flex-col gap-5">
         <Hero>
           <div className="w-full h-[75%] bg-green-800 rounded-3xl flex justify-center items-center flex-col">
@@ -76,7 +77,7 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className="flex flex-col pt-10 gap-2 w-[80%]">
+            <div className="flex flex-col pt-10 gap-2 w-full sm:w-[80%]">
               <div data-aos="fade-left">
                 <h1 className="text-lg sm:text-2xl font-semibold">
                   WHY CHOOSE OUR SCHOOL?
@@ -107,48 +108,51 @@ export default function Home() {
         </Hero>
         <Hero>
           <div className="w-full h-full flex flex-col">
-          <div className="w-full flex justify-start gap-8">
-            <div data-aos="">
-              <h1 className="text-lg sm:text-2xl font-semibold">CORE VALUES</h1>
-              <p>
-                  God fearing,
-                  Self-discipline,
-                  Commitment to achieve set goals,
-                  Respect for diversity,
-                  Intergity,
-                  Academic Excellence
-              </p>
+            <div className="w-full flex flex-col sm:flex-row justify-start gap-12">
+              <div className="flex flex-col w-full gap-3">
+                <div
+                  data-aos="fade-left"
+                  className="w-[90%] h-[95%] bg-blue-500 rounded-xl"
+                ></div>
+                <div data-aos="fade-down" className="w-full">
+                  <div className="h-52 w-full bg-yellow-400 rounded-xl">y</div>
+                </div>
+                <div data-aos="fade-up">
+                  <h1 className="text-2xl font-semibold">CORE VALUES</h1>
+                  <p>
+                    God fearing, Self-discipline, Commitment to achieve set
+                    goals, Respect for diversity, Intergity, Academic Excellence
+                  </p>
+                </div>
+              </div>
+              <div className="flex flex-col w-full gap-3">
+                <div data-aos="fade-down" className="w-full h-52">
+                  <div className="h-52 w-full bg-rose-400 rounded-xl">r</div>
+                </div>
+                <div data-aos="fade-up">
+                  <h1 className="text-2xl font-semibold">SCHOOL VISION</h1>
+                  <p>
+                    To produce multi-skilled men of virtue, able to achieve
+                    their highest potential in a diverse changing world.
+                  </p>
+                </div>
+              </div>
+              <div className="flex flex-col w-full gap-3">
+                <div data-aos="fade-down" className="w-full">
+                  <div className="h-52 w-full bg-sky-400 rounded-xl">s</div>
+                </div>
+                <div data-aos="fade-up">
+                  <h1 className="text-2xl font-semibold">SCHOOL MISSION</h1>
+                  <p>
+                    To provide wholesome education that transforms young men
+                    into morally upright, responsible and sociable citizens.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div data-aos="">
-              <h1 className="text-2xl font-semibold">
-                SCHOOL VISION
-              </h1>
-              <p>
-                To produce multi-skilled men of virtue, able to achieve their highest potential in a diverse changing world.
-              </p>
-            </div>
-            <div data-aos="">
-              <h1 className="text-2xl font-semibold">
-                SCHOOL MISSION
-              </h1>
-              <p>
-                To provide wholesome education that transforms young men into morally upright, responsible and sociable citizens.
-              </p>
-            </div>
-          </div>
-          <div className="w-full flex justify-between gap-8 mt-8">
-            <div data-aos="" className="w-1/2">
-              <div className="h-52 w-full bg-green-400 rounded-xl"></div>
-            </div>
-            <div data-aos="" className="w-1/2">
-            <div className="h-52 w-full bg-rose-400 rounded-xl"></div>
-            </div>
-            <div data-aos="" className="w-1/2">
-            <div className="h-52 w-full bg-sky-400 rounded-xl"></div>
-            </div>
-          </div>
           </div>
         </Hero>
+        <Footer />
       </div>
     </div>
   );

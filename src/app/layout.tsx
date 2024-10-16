@@ -45,7 +45,7 @@ export default function RootLayout({
         <title>KCB Platform</title>
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased sm:px-16 px-4`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased sm:px-16 ${isSidebarOpen ? "overflow-hidden" : ""}`}
       >
         {isLoading ? (
           <SplashScreen finishLoading={() => setIsLoading(false)} />
@@ -55,7 +55,7 @@ export default function RootLayout({
             <NavBar
               setSidebarOpen={setSidebarOpen}
             />
-            <SideBar isOpen={isSidebarOpen} onClose={() => setSidebarOpen} />
+            <SideBar isOpen={isSidebarOpen} onClose={setSidebarOpen} />
             {children}
           </>
         )}

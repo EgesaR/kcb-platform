@@ -10,6 +10,9 @@ import { useState, useEffect } from "react"
 import SideBar from "@/components/Portifolio/sidebar";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
+import Script from 'next/script'
+
+
 config.autoAddCss = false;
 
 const geistSans = localFont({
@@ -50,7 +53,6 @@ export default function RootLayout({
           href='https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/css/pagedone.css '
           rel='stylesheet'
         />
-        <script src='https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/js/pagedone.js'></script>
       </head>
       <body
         className={`${geistSans.variable} ${
@@ -68,6 +70,7 @@ export default function RootLayout({
             {children}
           </>
         )}
+        <Script src='https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/js/pagedone.js'></Script>
       </body>
     </html>
   );

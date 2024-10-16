@@ -116,15 +116,26 @@ const ContactUsPage = () => {
               title='First Name'
               placeholder='First Name'
               type='text'
+              inputSyle=''
             />
-            <FormInput title='Last Name' placeholder='Last Name' type='text' />
+            <FormInput
+              title='Last Name'
+              placeholder='Last Name'
+              type='text'
+              inputSyle=""/>
           </div>
           <div className='flex gap-10 mb-9'>
-            <FormInput title='Mail' placeholder='Mail' type='email' />
+            <FormInput
+              title='Mail'
+              placeholder='Mail'
+              type='email'
+              inputSyle=''
+            />
             <FormInput
               title='Phone Number'
               placeholder='Phone Number'
               type='tel'
+              inputSyle=''
             />
           </div>
           <FormInput
@@ -234,7 +245,7 @@ const FormConfirmationPopUp = ({
   );
 };
 
-const FormInput = ({ title, placeholder, type = "text", inputStyle }) => {
+const FormInput = ({ title, placeholder, type = "text", inputStyle="" }) => {
   return (
     <div className='flex-1'>
       <p className='text-sm text-slate-300'>{title}</p>

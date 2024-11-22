@@ -17,14 +17,10 @@ export default function Home() {
           <div className="w-full h-screen bg-black text-white overflow-y-hidden">
             <div className="overflow-y-scroll h-screen">
               <Navbar />
-              <div className="h-[100vh] bg-blue-300">
-                <div className="text-2xl font-bold text-center">
+              <div className="h-[90vh] pt-44 flex flex-col items-center">
+                <div className="text-4xl font-bold text-center bg-green-950 w-[90%] h-[60%] grid place-items-center rounded-xl">
                   Discipline, Hardwork, Excellence, Brotherhood, Legacy
                 </div>
-                Kiira College Butiki offers an exceptional educational
-                experience for boys in Jinja, established in 1959. Here are five
-                compelling words that encapsulate why parents should consider
-                this school:
               </div>
             </div>
           </div>

@@ -15,41 +15,42 @@ export default function Navbar() {
           href=""
           className="bg-white flex flex-row items-center gap-2 rounded-xl font-semibold text py-1 px-2 hover:bg-white/50 text-black group group-hover:bg-black group-hover:text-white"
         >
-          <CgHomeAlt className="text-black group-hover:text-white" />
+          <CgHomeAlt className="text-black group-hover:block group-hover:text-white" />
           <label>Home</label>
         </Link>
         <Link
           href=""
-          className="rounded-xl font-semibold text py-1 px-2 hover:bg-white/50"
+          className="rounded-xl font-semibold text flex flex-row gap-2 items-center py-1 px-2 hover:bg-white/50 group transition ease-in-out delay-300 duration-300"
         >
-          <MdSchool />
+          <MdSchool className="hidden text-black group-hover:block group-hover:text-white" />
           <label>Admission</label>
         </Link>
         <Link
           href=""
-          className="rounded-xl font-semibold text py-1 px-2 hover:bg-white/50"
+          className="rounded-xl font-semibold text flex flex-row gap-2 items-center py-1 px-2 hover:bg-white/50 group transition ease-in-out delay-300 duration-300"
         >
+          <LuPlane className="hidden text-black group-hover:block group-hover:text-white" />
           <label>Around the college</label>
         </Link>
         <Link
           href=""
-          className="rounded-xl font-semibold text py-1 px-2 hover:bg-white/50"
+          className="rounded-xl font-semibold text flex flex-row gap-2 items-center py-1 px-2 hover:bg-white/50 group transition ease-in-out delay-300 duration-300"
         >
-          <VscGraph />
+          <VscGraph className="hidden text-black group-hover:block group-hover:text-white" />
           <label>E-Report</label>
         </Link>
         <Link
           href=""
-          className="rounded-xl font-semibold text py-1 px-2 flex flex-row gap-2 items-center hover:bg-white/50"
+          className="rounded-xl font-semibold text flex flex-row gap-2 items-center py-1 px-2 hover:bg-white/50 transition-colors ease-in-out delay-300 duration-300"
         >
           <label>Contact</label>
-          <FiArrowUpRight size={25} />
+          <FiArrowUpRight size={25} className="text-white" />
         </Link>
         <Link
           href=""
-          className="rounded-xl font-semibold text py-1 px-2 hover:bg-white/50"
+          className="rounded-xl font-semibold text flex flex-row gap-2 items-center py-1 px-2 hover:bg-white/50 group transition ease-in-out delay-300 duration-300"
         >
-          <IoInformationOutline />
+          <IoInformationOutline className="hidden text-black group-hover:block group-hover:text-white" />
           <label>About us</label>
         </Link>
       </div>

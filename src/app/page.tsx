@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useState } from "react";
 import SplashScreen from "../components/SplashScreen";
 import { NextUIProvider } from "@nextui-org/react";
@@ -18,8 +17,15 @@ export default function Home() {
           <div className="w-full h-screen bg-black text-white overflow-y-hidden">
             <div className="overflow-y-scroll h-screen">
               <Navbar />
-              <p className="mt-4">Scroll down to see the navbar in action.</p>
-              <div className="h-[200vh]"></div>
+              <div className="h-[100vh] bg-blue-300">
+                <div className="text-2xl font-bold text-center">
+                  Discipline, Hardwork, Excellence, Brotherhood, Legacy
+                </div>
+                Kiira College Butiki offers an exceptional educational
+                experience for boys in Jinja, established in 1959. Here are five
+                compelling words that encapsulate why parents should consider
+                this school:
+              </div>
             </div>
           </div>
         )}

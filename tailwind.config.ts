@@ -14,6 +14,9 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        'Sevillana': ["var(--font-sevillana-regular)"],
+      },
     },
   },
   darkMode: "class",

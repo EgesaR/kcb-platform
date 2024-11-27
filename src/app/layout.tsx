@@ -14,6 +14,12 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
+const sevillanaRegular = localFont({
+  src: "./fonts/Sevillana-Regular.ttf",
+  variable: "--font-sevillana-regular",
+  display: 'swap'
+})
+
 export const metadata: Metadata = {
   title: "KCB Platform",
   description: "A platform for the proud buticians",
@@ -27,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${sevillanaRegular.variable} antialiased`}
       >
         {children}
       </body>

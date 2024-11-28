@@ -1,5 +1,5 @@
 import Link from "next/link"
-import {Navbar as Nav, NavbarBrand, NavbarContent, NavbarItem, Link as NextLink, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Button} from "@nextui-org/react"
+import {Navbar as Nav, NavbarBrand, NavbarContent, Link as NextLink, NavbarMenuToggle, NavbarMenu, NavbarMenuItem} from "@nextui-org/react"
 import { useState } from "react";
 
 export default function Navbar() {
@@ -72,14 +72,14 @@ export default function Navbar() {
           <NavbarMenuItem key={`${item}-${index}`}>
             <NextLink
               color={
-                index === 2
+                index === 0
                   ? "primary"
                   : index === menuItems.length - 1
                   ? "danger"
                   : "foreground"
               }
               className="w-full"
-              href="#"
+              href={`/${item.toLowerCase()}`}
             >
               {item}
             </NextLink>

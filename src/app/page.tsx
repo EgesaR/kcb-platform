@@ -28,6 +28,9 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+              <div className="h-[90vh] flex flex-col items-center">
+                Hello
+              </div>
             </div>
           </div>
         )}
